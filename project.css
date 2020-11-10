@@ -1,0 +1,133 @@
+h2 {
+  font-weight: 600;
+  font-size: 19px;
+  padding-bottom: 15px;
+  padding-top: 14px;
+  line-height: 1.2;
+}
+
+img {
+  float: left;
+  border-radius: 50px;
+  margin: 0 10px;
+  width: 35px;
+}
+
+.grid-container {
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 95px;
+  margin-top: 95px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px 28px;
+  grid-template-areas:
+    "block1 block1 block2 block5"
+    "block3 block4 block4 block5"
+    ". . . .";
+  position: absolute;
+}
+
+@media only screen and (max-width: 750px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 20px;
+    margin: 20px;
+  }
+}
+
+.headline {
+  display: inline-block;
+  line-height: 1;
+}
+
+.headline p {
+  margin: 4px;
+}
+
+.quotation {
+  border-radius: 0px;
+  border: none;
+  justify-items: right;
+}
+
+.block {
+  padding: 25px;
+  -webkit-box-shadow: 22px 22px 38px -17px rgba(0, 0, 0, 0.43);
+  box-shadow: 22px 22px 38px -17px rgba(0, 0, 0, 0.43);
+}
+
+.block .text {
+  opacity: 0.7;
+}
+
+.block .headline .graduate {
+  opacity: 0.5;
+}
+
+.block1 {
+  grid-area: block1;
+  color: hsl(210, 46%, 95%);
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  font-size: 13px;
+  background-image: url("../testimonials-grid-section-main/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  display: flex;
+  flex-direction: column;
+}
+
+.block1 img {
+  border: solid 2px #a775f2;
+}
+
+.block2 {
+  grid-area: block2;
+  color: hsl(210, 46%, 95%);
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+}
+
+.block2 img {
+  border: solid 2px hsl(210, 46%, 95%);
+}
+
+.block3 {
+  grid-area: block3;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.block3 img {
+  border: solid 2px hsl(217, 19%, 35%);
+}
+
+.block4 {
+  grid-area: block4;
+  color: hsl(0, 0%, 81%);
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 10px;
+}
+
+.block4 img {
+  border: solid 2px hsl(263, 55%, 52%);
+}
+
+.block5 {
+  grid-area: block5;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.block5 img {
+  border: solid 2px hsl(0, 0%, 81%);
+}
